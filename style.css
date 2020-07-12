@@ -1,0 +1,160 @@
+/* Параметры body */
+body {
+    background-color: blue;
+    color: white;
+}
+
+/* Параметры блока с лого */
+.logo {
+    width: 700px;
+    height: 100px;
+    margin: auto;
+    perspective: 1000px;
+    perspective-origin: 50% -200px;
+}
+    h1 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 3em;
+        letter-spacing: 0.1em;
+        color: #EEE;
+        animation: rotate 2s ease-in-out alternate infinite;
+    }
+    h1:before {
+        content: attr(data-shadow);
+        color: transparent;
+        text-shadow: 0 0 15px #010975 ;
+        position: absolute;
+        z-index: -1;
+        margin: -0.1em 0 0 0;
+        animation: skew 2s ease-in-out alternate infinite;
+        transform-origin: bottom;
+    }
+    @keyframes rotate {
+        from {
+        transform: rotateY(-10deg);
+        text-shadow:  1px -1px #CCC,
+                        2px -1px #BBB,
+                        3px -2px #AAA,
+                        4px -2px #999,
+                        5px -3px #888,
+                        6px -3px #777;
+        }
+        to {
+        transform: rotateY(10deg);
+        text-shadow:  -1px -1px #CCC,
+                        -2px -1px #BBB,
+                        -3px -2px #AAA,
+                        -4px -2px #999,
+                        -5px -3px #888,
+                        -6px -3px #777;
+        }
+    }
+    @keyframes skew {
+        from {
+        transform: scaleY(0.3) skewX(-15deg);
+        }
+        to {
+        transform: scaleY(0.3) skewX(-20deg);
+        }
+    }
+
+/* Параметры блока с фотографией */
+.des {
+    position: absolute;
+    left: calc(50% - 400px/2 - 210px);
+    top: 100px;
+}
+.imageklim {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    left: calc(50% - 400px/2 - 210px);
+    top: 150px;
+    box-shadow: 8px 4px 16px rgba(1, 9, 117, 0.50);
+}
+
+/* Параметры блока с контентом. Портфолио */
+.cntct h2 {
+    position: absolute;
+    width: 200px;
+    height: 30px;
+    left: calc(50% - 285px/2 + 152.5px);
+    top: 135px;
+
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+    color: yellow;
+
+    text-shadow: #010975 1px 1px 0, #010975 2px 2px 0, 
+                 #010975 3px 3px 0, #010975 4px 4px 0, 
+                 #010975 5px 5px 0;
+}
+
+.cntct ul {
+    position: absolute;
+    width: 400px;
+    height: 20px;
+    left: calc(50% - 400px/2 + 190px);
+    top: 180px;
+
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    
+    color: #ffffff;
+    list-style: square;
+}
+
+.cntct a {
+    color: #ffffff;
+    
+}
+
+.cntct a:hover {
+    color: #9dff00;   
+}
+
+/* Параметры блока с контактными ссылками */
+.mail {
+    position: absolute;
+    left: calc(50% - 400px/2 + 200px);
+    top: 670px;
+    rotate: 10deg;
+}
+
+.telega {
+    position: absolute;
+    left: calc(50% - 400px/2 + 200px);
+    top: 560px;
+    rotate: -10deg;
+}
+
+.edu {
+    position: absolute;
+    left: calc(50% - 400px/2 + 200px);
+    top: 620px;
+}
+
+.ins {
+    position: absolute;
+    left: calc(50% - 400px/2 + 180px);
+    top: 725px;
+}
+
+.zemlia {
+    position: absolute;
+    left: calc(50% - 400px/2 + 350px);
+    top: 400px;
+}
+
+
+
+      
+      
