@@ -63,14 +63,14 @@ body {
 .des {
     position: absolute;
     left: calc(50% - 400px/2 - 210px);
-    top: 100px;
+    top: 80px;
 }
 .imageklim {
     position: absolute;
     width: 400px;
     height: 600px;
     left: calc(50% - 400px/2 - 210px);
-    top: 150px;
+    top: 130px;
     box-shadow: 8px 4px 16px rgba(1, 9, 117, 0.50);
 }
 
@@ -80,7 +80,7 @@ body {
     width: 200px;
     height: 30px;
     left: calc(50% - 285px/2 + 152.5px);
-    top: 135px;
+    top: 115px;
 
     font-family: Helvetica;
     font-style: normal;
@@ -99,8 +99,8 @@ body {
     position: absolute;
     width: 400px;
     height: 20px;
-    left: calc(50% - 400px/2 + 190px);
-    top: 180px;
+    left: calc(50% - 400px/2 + 195px);
+    top: 160px;
 
     font-family: Helvetica;
     font-weight: normal;
@@ -125,33 +125,34 @@ body {
 .mail {
     position: absolute;
     left: calc(50% - 400px/2 + 200px);
-    top: 670px;
+    top: 650px;
     rotate: 10deg;
 }
 
 .telega {
     position: absolute;
     left: calc(50% - 400px/2 + 200px);
-    top: 560px;
+    top: 540px;
     rotate: -10deg;
+    
 }
 
 .edu {
     position: absolute;
     left: calc(50% - 400px/2 + 200px);
-    top: 620px;
+    top: 600px;
 }
 
 .ins {
     position: absolute;
     left: calc(50% - 400px/2 + 180px);
-    top: 725px;
+    top: 700px;
 }
 
 .zemlia {
     position: absolute;
     left: calc(50% - 400px/2 + 350px);
-    top: 400px;
+    top: 380px;
 }
 
 
