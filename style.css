@@ -2,17 +2,18 @@
 body {
     background-color: blue;
     color: white;
+    box-sizing: border-box;
 }
 
 /* Параметры блока с лого */
-.logo {
-    width: 700px;
-    height: 100px;
-    margin: auto;
+.logo h1 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
     perspective: 1000px;
     perspective-origin: 50% -200px;
 }
-    h1 {
+    .logo h1 {
         text-align: center;
         text-transform: uppercase;
         font-size: 3em;
@@ -20,7 +21,7 @@ body {
         color: #EEE;
         animation: rotate 2s ease-in-out alternate infinite;
     }
-    h1:before {
+    .logo h1:before {
         content: attr(data-shadow);
         color: transparent;
         text-shadow: 0 0 15px #010975 ;
@@ -58,104 +59,91 @@ body {
         transform: scaleY(0.3) skewX(-20deg);
         }
     }
-
-/* Параметры блока с фотографией */
+/* Параметры блока с гифкой дизайнер */
 .des {
     position: absolute;
-    left: calc(50% - 400px/2 - 210px);
-    top: 80px;
-}
-.imageklim {
-    position: absolute;
-    width: 400px;
-    height: 600px;
-    left: calc(50% - 400px/2 - 210px);
-    top: 130px;
-    box-shadow: 8px 4px 16px rgba(1, 9, 117, 0.50);
+    margin-top: 20px;
+    margin-left: 23%;
 }
 
-/* Параметры блока с контентом. Портфолио */
-.cntct h2 {
-    position: absolute;
-    width: 200px;
-    height: 30px;
-    left: calc(50% - 285px/2 + 152.5px);
-    top: 115px;
-
-    font-family: Helvetica;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 16px;
-    letter-spacing: 0.01em;
-    color: yellow;
-
-    text-shadow: #010975 1px 1px 0, #010975 2px 2px 0, 
-                 #010975 3px 3px 0, #010975 4px 4px 0, 
-                 #010975 5px 5px 0;
+/* Параметры блока с контентом */
+.container {
+    max-width: 800px;
+    margin: auto;
 }
-
-.cntct ul {
-    position: absolute;
-    width: 400px;
-    height: 20px;
-    left: calc(50% - 400px/2 + 195px);
-    top: 160px;
-
-    font-family: Helvetica;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 24px;
-    letter-spacing: 0.01em;
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+.col-2 {
     
-    color: #ffffff;
-    list-style: square;
+    width: 50%;
+    padding: 0 10px;
+}
+.col-3 {
+    width: 47,5%;
+    padding: 0 10px;
 }
 
-.cntct a {
-    color: #ffffff;
-    
-}
+    /* Параметры блока с ссылками на работы */
+    .col-3 h2 {
+        font-family: Helvetica;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 32px;
+        line-height: 0.05em;
+        letter-spacing: 0.03em;
+        color: yellow;
 
-.cntct a:hover {
-    color: #9dff00;   
-}
+        text-shadow: #010975 1px 1px 0, #010975 2px 2px 0, 
+                    #010975 3px 3px 0, #010975 4px 4px 0, 
+                    #010975 5px 5px 0;
+    }
 
-/* Параметры блока с контактными ссылками */
-.mail {
-    position: absolute;
-    left: calc(50% - 400px/2 + 200px);
-    top: 650px;
-    rotate: 10deg;
-}
+    .col-3 ul {
+        margin-left: -15px;
+        font-family: Helvetica;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.01em;
+        
+        color: #ffffff;
+        list-style: square;
+    }
 
-.telega {
-    position: absolute;
-    left: calc(50% - 400px/2 + 200px);
-    top: 540px;
-    rotate: -10deg;
-    
-}
+    .col-3 a {
+        color: #ffffff;
+        
+    }
 
-.edu {
-    position: absolute;
-    left: calc(50% - 400px/2 + 200px);
-    top: 600px;
-}
+    .col-3 a:hover {
+        color: #9dff00;   
+    }
 
-.ins {
-    position: absolute;
-    left: calc(50% - 400px/2 + 180px);
-    top: 700px;
-}
+       /* Параметры блока с контактными ссылками */
+        .mail {;
+            margin-top: 120px;
+            rotate: 10deg;
+        }
 
-.zemlia {
-    position: absolute;
-    left: calc(50% - 400px/2 + 350px);
-    top: 380px;
-}
+        .telega {
+            margin-top: -10px;
+            rotate: -10deg;
+            
+        }
 
+        .edu {
+            margin-top: 10px;
+            margin-left: 70px;
+        }
 
+        .ins {
+            margin-left: 120px;
+            margin-top: 50px;
+        }
 
-      
-      
+        .zemlia {
+            margin-top: -60px;
+        }
