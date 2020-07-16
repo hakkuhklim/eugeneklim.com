@@ -60,12 +60,6 @@ body {
         transform: scaleY(0.3) skewX(-20deg);
         }
     }
-/* Параметры блока с гифкой дизайнер */
-.des {
-    position: absolute;
-    margin-top: 20px;
-    margin-left: 23%;
-}
 
 /* Параметры блока с контентом */
 .container {
