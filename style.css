@@ -14,7 +14,7 @@ body {
     perspective-origin: 50% -200px;
     }
     h1 {
-        font-family: "Comic Sans MS", cursive, sans-serif;
+        font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
         text-align: center;
         text-transform: uppercase;
         font-size: 3em;
