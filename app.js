@@ -10,8 +10,6 @@ ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 const img = document.createElement("img");
 img.src = "eugene_klim_photo.jpg";
-let imgW = img.width / 6;
-let imgH = img.height / 6;
 
 let currentX = null;
 let currentY = null;
@@ -26,12 +24,21 @@ document.addEventListener("mousemove", function(e) {
         currentX = aimX;
         currentY = aimY;
     }
-    draw();
 });
 
-
 function draw() {
-    ctx.drawImage(img, currentX - imgW / 2, currentY - imgH / 2, imgW, imgH);
-    currentX = currentX + (aimX - currentX) * 0.1;
-    currentY = currentY + (aimY - currentY) * 0.1;
+  if (currentX) {
+    ctx.drawImage(
+      img,
+      currentX - img.width / 6,
+      currentY - img.width / 6,
+      img.width / 4,
+      img.height / 4
+    );
+  }
+currentX = currentX + (aimX - currentX) * 0.1;
+  currentY = currentY + (aimY - currentY) * 0.1;
+  requestAnimationFrame(draw);
 }
+
+draw();
