@@ -30,10 +30,10 @@ function draw() {
   if (currentX) {
     ctx.drawImage(
       img,
-      currentX - img.width / 6,
-      currentY - img.width / 6,
-      img.width / 4,
-      img.height / 4
+      currentX - img.width / 8,
+      currentY - img.width / 8,
+      img.width / 6,
+      img.height / 6
     );
   }
 currentX = currentX + (aimX - currentX) * 0.1;
