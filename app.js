@@ -9,7 +9,7 @@ ctx.fillStyle = "blue";
 ctx.fillRect(0, 0, canvas.width, canvas.height);
 
 const img = document.createElement("img");
-img.src = "eugene_klim_photo.jpg";
+img.src = "eugene_klim_photo.png";
 
 let currentX = null;
 let currentY = null;
