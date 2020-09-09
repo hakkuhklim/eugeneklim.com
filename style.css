@@ -76,13 +76,13 @@ body {
     padding: 0 10px;
 }
 .col-3 {
-    width: 47,5%;
+    width: 45%;
     padding: 0 10px;
 }
 
     /* Параметры блока с ссылками на работы */
     .col-3 h2 {
-        font-family: Helvetica;
+        font-family: 'Roboto Mono', monospace;
         font-style: normal;
         font-weight: bold;
         font-size: 32px;
@@ -97,12 +97,10 @@ body {
 
     .col-3 ul {
         margin-left: -15px;
-        font-family: Helvetica;
+        font-family: 'Roboto Mono', monospace;
         font-weight: normal;
         font-size: 16px;
         line-height: 24px;
-        letter-spacing: 0.01em;
-        
         color: #ffffff;
         list-style: square;
     }
