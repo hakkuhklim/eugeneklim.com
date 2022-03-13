@@ -25,80 +25,135 @@ const linkIcon6 = document.querySelector(".link-icon6");
 const linkIcon7 = document.querySelector(".link-icon7");
 
 link1.addEventListener("mouseenter", () => {
-  mainBlock.style.display = "none";
-  block1.style.display = "block";
-  linkIcon1.style.display = "block";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "none";
+    block1.style.display = "block";
+    linkIcon1.style.display = "block";
+  }
 });
 link1.addEventListener("mouseout", () => {
-  mainBlock.style.display = "flex";
-  block1.style.display = "none";
-  linkIcon1.style.display = "none";
+  let intViewportWidth = window.innerWidth;
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "flex";
+    block1.style.display = "none";
+    linkIcon1.style.display = "none";
+  }
 });
 
 link2.addEventListener("mouseenter", () => {
-  mainBlock.style.display = "none";
-  block2.style.display = "block";
-  linkIcon2.style.display = "block";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "none";
+    block2.style.display = "block";
+    linkIcon2.style.display = "block";
+  }
 });
 link2.addEventListener("mouseout", () => {
-  mainBlock.style.display = "flex";
-  block2.style.display = "none";
-  linkIcon2.style.display = "none";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "flex";
+    block2.style.display = "none";
+    linkIcon2.style.display = "none";
+  }
 });
 
 link3.addEventListener("mouseenter", () => {
-  mainBlock.style.display = "none";
-  block3.style.display = "block";
-  linkIcon3.style.display = "block";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "none";
+    block3.style.display = "block";
+    linkIcon3.style.display = "block";
+  }
 });
 link3.addEventListener("mouseout", () => {
-  mainBlock.style.display = "flex";
-  block3.style.display = "none";
-  linkIcon3.style.display = "none";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "flex";
+    block3.style.display = "none";
+    linkIcon3.style.display = "none";
+  }
 });
 
 link4.addEventListener("mouseenter", () => {
-  mainBlock.style.display = "none";
-  block4.style.display = "block";
-  linkIcon4.style.display = "block";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "none";
+    block4.style.display = "block";
+    linkIcon4.style.display = "block";
+  }
 });
 link4.addEventListener("mouseout", () => {
-  mainBlock.style.display = "flex";
-  block4.style.display = "none";
-  linkIcon4.style.display = "none";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "flex";
+    block4.style.display = "none";
+    linkIcon4.style.display = "none";
+  }
 });
 
 link5.addEventListener("mouseenter", () => {
-  mainBlock.style.display = "none";
-  block5.style.display = "block";
-  linkIcon5.style.display = "block";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "none";
+    block5.style.display = "block";
+    linkIcon5.style.display = "block";
+  }
 });
 link5.addEventListener("mouseout", () => {
-  mainBlock.style.display = "flex";
-  block5.style.display = "none";
-  linkIcon5.style.display = "none";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "flex";
+    block5.style.display = "none";
+    linkIcon5.style.display = "none";
+  }
 });
 
 link6.addEventListener("mouseenter", () => {
-  mainBlock.style.display = "none";
-  block6.style.display = "block";
-  linkIcon6.style.display = "block";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "none";
+    block6.style.display = "block";
+    linkIcon6.style.display = "block";
+  }
 });
 link6.addEventListener("mouseout", () => {
-  mainBlock.style.display = "flex";
-  block6.style.display = "none";
-  linkIcon6.style.display = "none";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "flex";
+    block6.style.display = "none";
+    linkIcon6.style.display = "none";
+  }
 });
 
 link7.addEventListener("mouseenter", () => {
-  mainBlock.style.display = "none";
-  block7.style.display = "block";
-  linkIcon7.style.display = "block";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "none";
+    block7.style.display = "block";
+    linkIcon7.style.display = "block";
+  }
 });
 link7.addEventListener("mouseout", () => {
-  mainBlock.style.display = "block";
-  block7.style.display = "none";
-  linkIcon7.style.display = "none";
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "block";
+    block7.style.display = "none";
+    linkIcon7.style.display = "none";
+  }
 });
 
 // BLOTTER - Example 1
@@ -135,7 +190,6 @@ btnMore.addEventListener("click", () => {
   cvPage.style.display = "block";
 
   let intViewportWidth = window.innerWidth;
-  console.log(intViewportWidth);
 
   if (intViewportWidth < 767) {
     leftBlock.style.display = "none";
