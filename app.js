@@ -1,26 +1,26 @@
 // Links list
 const link1 = document.querySelector(".link1");
-const link2 = document.querySelector(".link2");
+// const link2 = document.querySelector(".link2");
 const link3 = document.querySelector(".link3");
 const link4 = document.querySelector(".link4");
-const link5 = document.querySelector(".link5");
+// const link5 = document.querySelector(".link5");
 const link6 = document.querySelector(".link6");
 const link7 = document.querySelector(".link7");
 
 const mainBlock = document.querySelector(".init-page");
 const block1 = document.querySelector(".block1");
-const block2 = document.querySelector(".block2");
+// const block2 = document.querySelector(".block2");
 const block3 = document.querySelector(".block3");
 const block4 = document.querySelector(".block4");
-const block5 = document.querySelector(".block5");
+// const block5 = document.querySelector(".block5");
 const block6 = document.querySelector(".block6");
 const block7 = document.querySelector(".block7");
 
 const linkIcon1 = document.querySelector(".link-icon1");
-const linkIcon2 = document.querySelector(".link-icon2");
+// const linkIcon2 = document.querySelector(".link-icon2");
 const linkIcon3 = document.querySelector(".link-icon3");
 const linkIcon4 = document.querySelector(".link-icon4");
-const linkIcon5 = document.querySelector(".link-icon5");
+// const linkIcon5 = document.querySelector(".link-icon5");
 const linkIcon6 = document.querySelector(".link-icon6");
 const linkIcon7 = document.querySelector(".link-icon7");
 
@@ -42,24 +42,24 @@ link1.addEventListener("mouseout", () => {
   }
 });
 
-link2.addEventListener("mouseenter", () => {
-  let intViewportWidth = window.innerWidth;
+// link2.addEventListener("mouseenter", () => {
+//   let intViewportWidth = window.innerWidth;
 
-  if (intViewportWidth > 767) {
-    mainBlock.style.display = "none";
-    block2.style.display = "block";
-    linkIcon2.style.display = "block";
-  }
-});
-link2.addEventListener("mouseout", () => {
-  let intViewportWidth = window.innerWidth;
+//   if (intViewportWidth > 767) {
+//     mainBlock.style.display = "none";
+//     block2.style.display = "block";
+//     linkIcon2.style.display = "block";
+//   }
+// });
+// link2.addEventListener("mouseout", () => {
+//   let intViewportWidth = window.innerWidth;
 
-  if (intViewportWidth > 767) {
-    mainBlock.style.display = "flex";
-    block2.style.display = "none";
-    linkIcon2.style.display = "none";
-  }
-});
+//   if (intViewportWidth > 767) {
+//     mainBlock.style.display = "flex";
+//     block2.style.display = "none";
+//     linkIcon2.style.display = "none";
+//   }
+// });
 
 link3.addEventListener("mouseenter", () => {
   let intViewportWidth = window.innerWidth;
@@ -99,24 +99,24 @@ link4.addEventListener("mouseout", () => {
   }
 });
 
-link5.addEventListener("mouseenter", () => {
-  let intViewportWidth = window.innerWidth;
+// link5.addEventListener("mouseenter", () => {
+//   let intViewportWidth = window.innerWidth;
 
-  if (intViewportWidth > 767) {
-    mainBlock.style.display = "none";
-    block5.style.display = "block";
-    linkIcon5.style.display = "block";
-  }
-});
-link5.addEventListener("mouseout", () => {
-  let intViewportWidth = window.innerWidth;
+//   if (intViewportWidth > 767) {
+//     mainBlock.style.display = "none";
+//     block5.style.display = "block";
+//     linkIcon5.style.display = "block";
+//   }
+// });
+// link5.addEventListener("mouseout", () => {
+//   let intViewportWidth = window.innerWidth;
 
-  if (intViewportWidth > 767) {
-    mainBlock.style.display = "flex";
-    block5.style.display = "none";
-    linkIcon5.style.display = "none";
-  }
-});
+//   if (intViewportWidth > 767) {
+//     mainBlock.style.display = "flex";
+//     block5.style.display = "none";
+//     linkIcon5.style.display = "none";
+//   }
+// });
 
 link6.addEventListener("mouseenter", () => {
   let intViewportWidth = window.innerWidth;
@@ -202,3 +202,49 @@ closeIcon.addEventListener("click", () => {
   cvPage.style.display = "none";
   leftBlock.style.display = "block";
 });
+
+// drawing
+const canvas = document.querySelector ("canvas");
+canvas.width = window.innerWidth *2;
+canvas.height = window.innerHeight *2;
+
+const ctx = canvas.getContext("2d");
+ctx.scale(2, 2);
+
+ctx.fillStyle = "blue";
+ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+const img = document.createElement("img");
+img.src = "eugene_klim_photo.png";
+
+let currentX = null;
+let currentY = null;
+let aimX = null;
+let aimY = null;
+
+document.addEventListener("mousemove", function(e) {
+    aimX = e.pageX;
+    aimY = e.pageY;
+
+    if (currentX == null) {
+        currentX = aimX;
+        currentY = aimY;
+    }
+});
+
+function draw() {
+  if (currentX) {
+    ctx.drawImage(
+      img,
+      currentX - img.width / 8,
+      currentY - img.width / 8,
+      img.width / 6,
+      img.height / 6
+    );
+  }
+currentX = currentX + (aimX - currentX) * 0.1;
+  currentY = currentY + (aimY - currentY) * 0.1;
+  requestAnimationFrame(draw);
+}
+
+draw();
