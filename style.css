@@ -1,138 +1,347 @@
-/* Параметры body */
 body {
-    background-color: blue;
-    color: white;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Syne", sans-serif;
+  font-style: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: black;
 }
 
-    /* Параметры блока с лого */
-    h1 {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-    perspective: 1000px;
-    perspective-origin: 50% -200px;
-    }
-    h1 {
-        font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 3em;
-        letter-spacing: 0.1em;
-        color: #EEE;
-        animation: rotate 2s ease-in-out alternate infinite;
-    }
-    h1:before {
-        content: attr(data-shadow);
-        color: transparent;
-        text-shadow: 0 0 15px #010975 ;
-        position: absolute;
-        z-index: -1;
-        margin: -0.1em 0 0 0;
-        animation: skew 2s ease-in-out alternate infinite;
-        transform-origin: bottom;
-    }
-    @keyframes rotate {
-        from {
-        transform: rotateY(-10deg);
-        text-shadow:  1px -1px #CCC,
-                        2px -1px #BBB,
-                        3px -2px #AAA,
-                        4px -2px #999,
-                        5px -3px #888,
-                        6px -3px #777;
-        }
-        to {
-        transform: rotateY(10deg);
-        text-shadow:  -1px -1px #CCC,
-                        -2px -1px #BBB,
-                        -3px -2px #AAA,
-                        -4px -2px #999,
-                        -5px -3px #888,
-                        -6px -3px #777;
-        }
-    }
-    @keyframes skew {
-        from {
-        transform: scaleY(0.3) skewX(-15deg);
-        }
-        to {
-        transform: scaleY(0.3) skewX(-20deg);
-        }
-    }
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: #808080;
+}
 
-/* Параметры блока с контентом */
-.container {
-    max-width: 800px;
+p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+  color: #000;
+}
+
+.grey-color {
+  color: #808080;
+}
+.box-560 {
+  width: 560px;
+  height: 100%;
+}
+
+.float-right {
+  float: right;
+}
+
+/* Левый бокс */
+.box-left {
+  width: 50%;
+  padding: 48px 40px 48px 0px;
+  overflow: auto;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.menu-container {
+  display: flex;
+  border-top: 2px solid #000000;
+  padding-top: 12px;
+  padding-bottom: 64px;
+}
+
+.title-menu h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+
+  width: 125px;
+  margin-right: 20px;
+  margin-top: 0px;
+}
+
+.description-menu {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  width: 100%;
+}
+
+.description-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.description-menu ul li {
+  padding-bottom: 10px;
+}
+
+.description-menu ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.description-menu ul li a:hover {
+  color: #1424fb;
+}
+
+.btn-container {
+  margin-top: 20px;
+}
+
+.btn-more {
+  background: #1424fb;
+  border-radius: 40px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+  padding: 8px 20px;
+  margin-top: 20px;
+}
+
+.btn-container a:hover {
+  background: #ff3300;
+}
+
+/* Правый бокс */
+.box-right {
+  width: 50%;
+  background: #fafafa;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  padding: 33px 0px 48px 40px;
+  overflow: auto;
+}
+.init-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+.t-1 h1 {
+  font-weight: 750;
+  font-size: 5em;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  margin-top: 0px;
+}
+
+.block1,
+.block2,
+.block3,
+.block4,
+.block5,
+.block6,
+.block7,
+.link-icon1,
+.link-icon2,
+.link-icon3,
+.link-icon4,
+.link-icon5,
+.link-icon6,
+.link-icon7 {
+  display: none;
+}
+
+.link-icon1,
+.link-icon2,
+.link-icon3,
+.link-icon4,
+.link-icon5,
+.link-icon6,
+.link-icon7 {
+  float: right;
+}
+
+.t-2 {
+  padding-left: 4px;
+}
+.t-2 a {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  line-height: 20px;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+  color: black;
+}
+
+.t-2 a:hover {
+  color: rgba(20, 36, 251, 1);
+}
+.l1 {
+  padding-bottom: 4px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+}
+.l2 {
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+.l3 {
+  padding-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+/* About. Правый бокс */
+.cv-page {
+  padding-top: 15px;
+  display: none;
+}
+
+.main-header {
+  display: flex;
+}
+.avatar {
+  padding-right: 20px;
+}
+.block-title-and-close {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.title-text h2 {
+  color: #000;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.second-text p {
+  padding-top: 12px;
+  padding-bottom: 13px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.close-icon {
+  text-align: right;
+}
+
+.icon-img {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-image: url("./img/big_close_icon.svg");
+}
+
+.icon-img:hover {
+  /* opacity: 0.5; */
+  background-image: url("./img/big-close-icon-hover.svg");
+}
+
+.cv-row {
+  display: flex;
+  margin: 44px 0px;
+  border-top: 2px solid #000000;
+}
+
+.cv-inner-block {
+  margin-bottom: 28px;
+}
+
+.cv-left p {
+  width: 125px;
+  margin-right: 20px;
+  font-weight: 700;
+  color: #808080;
+}
+.title-cv p {
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+.years {
+  margin-top: 0px;
+  margin-bottom: 12px;
+}
+.text-cv p {
+  padding-top: 0;
+  padding-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.skills-hobbies-text p {
+  padding-bottom: 8px;
+  margin-bottom: 0;
+}
+
+.primary-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* Родительский контейнер */
+@media (min-width: 767px) {
+  .primary-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    /* background-color: #c40000; */
+  }
+
+  .second-container {
+    height: 100vh;
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
     margin: auto;
-}
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 -10px;
-}
-.col-2 {
-    width: 50%;
-    padding: 0 10px;
-}
-.col-3 {
-    width: 45%;
-    padding: 0 10px;
+    border: 1px solid silver;
+  }
 }
 
-    /* Параметры блока с ссылками на работы */
-    .col-3 h2 {
-        font-family: 'Roboto Mono', monospace;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 32px;
-        line-height: 0.05em;
-        letter-spacing: 0.03em;
-        color: yellow;
+@media (max-width: 766px) {
+  .box-left {
+    width: auto;
+    height: 100%;
+    padding: 20px;
+    margin-top: 20px;
+  }
 
-        text-shadow: #010975 1px 1px 0, #010975 2px 2px 0, 
-                    #010975 3px 3px 0, #010975 4px 4px 0, 
-                    #010975 5px 5px 0;
-    }
+  .cv-row {
+    flex-direction: column;
+  }
 
-    .col-3 ul {
-        margin-left: -15px;
-        font-family: 'Roboto Mono', monospace;
-        font-weight: normal;
-        font-size: 16px;
-        line-height: 24px;
-        color: #ffffff;
-        list-style: square;
-    }
+  .menu-container {
+    flex-direction: column;
+  }
+  .box-right {
+    width: auto;
+    padding: 0;
+    padding: 20px;
+  }
+  .box-560 {
+    width: 100%;
+  }
+  .t-1 h1 {
+    font-size: 2.5em;
+  }
 
-    .col-3 a {
-        color: #ffffff;
-        
-    }
+  .description-menu {
+    font-size: 24px;
+    width: 100%;
+  }
 
-    .col-3 a:hover {
-        color: rgb(255, 0, 212);   
-    }
-
-       /* Параметры блока с контактными ссылками */
-        .mail {
-            margin-top: 90px;
-        }
-
-        .telega {
-            margin-top: -20px;
-        }
-
-        .edu {
-            margin-top: 5px;
-            margin-left: 70px;
-        }
-
-        .ins {
-            margin-left: 120px;
-            margin-top: 20px;
-        }
-
-        .zemlia {
-            margin-top: -90px;
-        }
+  .overlay {
+    width: 0px;
+    height: 0px;
+  }
+}

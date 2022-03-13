@@ -1,114 +1,281 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
 
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="yandex-verification" content="87512d871d60b679" />
-        <title>Eugene Klim - designer</title>
-        <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-        
-        <!-- ... -->
-        <meta name="viewport" content="width=490">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;450;480;500;700;720;730;750;780;800&display=swap"
+      rel="stylesheet"
+    />
 
-        <!-- Yandex.Metrika counter -->
-        <script type="text/javascript" >
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-        m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+    <script src="blotter.min.js"></script>
+    <script src="slidingDoorMaterial.js"></script>
+  </head>
 
-        ym(65573557, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-           });
-        </script>
-        <noscript><div><img src="https://mc.yandex.ru/watch/65573557" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-        <!-- /Yandex.Metrika counter -->
-    </head>
-
-    <body>
-        <!-- Hello, my name is Eugene Klimut'. From an early age, I had a craving for art. 
-             I always thought that it should be not only beautiful, but also functional. 
-             Therefore, I decided to realize my abilities through the design of buildings.
-             For this, I received the necessary education and worked as an architect. 
-             During the work, I managed to participate in many projects and work in different teams. 
-             This taught me patience and the realization that only a joint solution to the problem can 
-             benefit both the project and the company. As an architect, I realized that I could not go 
-             beyond the framework of architecture standards. I see limitations that prevent me from 
-             realization my ideas. This prompted me to further development. The result of this was
-             the design of user interfaces UI / UX. I realized that UI is very suitable for my inner 
-             desire to realize my abilities in art, and UX has a logical structure, which is as close 
-             to me as an architect. 
-             I am glad that my design works, and not just a beautiful idea that is not able to benefit. -->
-
-        <!-- Блок с лого -->
-        <div class="logo">
-            <h1 data-shadow="ДИЗАЙНЕР ЖЕНЯ">
-                ДИЗАЙНЕР ЖЕНЯ
-            </h1>
-        </div>
-
-        <!-- Блок с контентом -->
-        <div class="container">
-            <div class="row">
-                <div class="col-2">
-                    <a target="_blank" href="draw.html"><img src="eugene_klim_photo_small.png" width="400px"  alt=""/></a>
-                </div>
-
-                <div class="col-3">
-                    <h2>PORTFOLIO</h2>
-                    <ul>
-                        <li>
-                            <a target="_blank" href="draw.html">Drawing</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://dribbble.com/eugeneklim">Dribbble</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://birkenstock.ru.com/">Support and improving design the current site Birkenstock in Russia</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://ng.brandpool-east.com/">Support and improving design the current site National Geographic in Russia</a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://vimeo.com/322457127">The photo book «Disco»</a>
-                        </li>
-                        
-
-                    </ul>
-                        
-                        <!-- Блок с контактными ссылками -->
-                        <div class="mail">
-                            <img src="email.gif" width="350px" alt="">
-                        </div>
-                        
-                        <div class="telega">
-                            <a target="_blank" href="https://t.me/thunderdome97"><img src="telegram.gif" width="160px" alt=""></a>
-                        </div>
-
-                        <div class="edu">
-                            <a target="_blank" href="https://www.linkedin.com/in/eugene-klimut-36a47312a/"><img src="linkedin.gif" width="300px" alt=""></a>
-                        </div>
-
-                        <div class="ins">
-                            <a target="_blank" href="https://www.instagram.com/eugeneklim/"><img src="instagram.gif" width="200px" alt=""></a>
-                        </div>
-                
-                        <div class="zemlia">
-                            <img src="earth.gif" alt="">
-                        </div>
-
-                </div>
+  <body>
+    <!-- Родительский контейнер -->
+    <div class="primary-container">
+      <!-- <div class="second-container"> -->
+      <!-- Левый бокс -->
+      <div class="box-left">
+        <div class="overlay"></div>
+        <div class="box-560 float-right">
+          <div class="menu-container">
+            <div class="title-menu"><h2>About</h2></div>
+            <div class="description-menu">
+              I’m a ui/ux designer based in Warsaw, Poland. Below is a
+              collection of some of projects I’ve worked on.
+              <div class="btn-container">
+                <a href="#" class="btn-more">more</a>
+              </div>
             </div>
-
+          </div>
+          <div class="menu-container">
+            <div class="title-menu"><h2>Work</h2></div>
+            <div class="description-menu">
+              <ul class="list-link">
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://dribbble.com/eugeneklim"
+                    class="link1"
+                    >Dribbble</a
+                  >
+                  <img src="img/big_link_icon.svg" class="link-icon1" />
+                </li>
+                <li>
+                  <a target="_blank" href="#" class="link2">Behance</a>
+                  <img src="img/big_link_icon.svg" class="link-icon2" />
+                </li>
+                <li>
+                  <a target="_blank" href="#" class="link3"
+                    >National Geographic</a
+                  >
+                  <img src="img/big_link_icon.svg" class="link-icon3" />
+                </li>
+                <li>
+                  <a target="_blank" href="#" class="link4">Lyle & Scott</a>
+                  <img src="img/big_link_icon.svg" class="link-icon4" />
+                </li>
+                <li>
+                  <a target="_blank" href="#" class="link5">Posters</a>
+                  <img src="img/big_link_icon.svg" class="link-icon5" />
+                </li>
+                <li>
+                  <a target="_blank" href="#" class="link6"
+                    >The photo book<br />«Disco»</a
+                  >
+                  <img src="img/big_link_icon.svg" class="link-icon6" />
+                </li>
+                <li>
+                  <a target="_blank" href="#" class="link7">Drawing</a>
+                  <img src="img/big_link_icon.svg" class="link-icon7" />
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
+      </div>
 
+      <!-- Правый бокс -->
+      <div class="box-right">
+        <div class="box-560">
+          <!-- <div id="plain-text"></div> -->
 
+          <!-- Init page -->
+          <div class="init-page">
+            <div class="t-1 mainBlock">
+              <h1>EUGENE KLIMUTS WEB/ GRAPHIC DESIGN/ PHOTO</h1>
+            </div>
+            <div class="t-2">
+              <div class="l1">
+                <a target="_blank" href="linkedin.com/in/eugene-klimuts-36a47312a">LinkedIn</a>
+                <img src="img/small_link_icon.svg"" alt="" />
+              </div>
 
+              <div class="l2">
+                <a target="_blank" href="https://www.instagram.com/eugeneklim/"
+                  >Instagram</a>
+                <img src="img/small_link_icon.svg" alt="" />
+              </div>
 
-    </body>
+              <div class="l3">
+                <a href="mailto:eugeneklimut@gmail.com"
+                  >eugeneklimut@gmail.com</a>
+                <img src="img/mail_icon.svg" alt="" />
+              </div>
 
+              <div class="grey-color">Warsaw, Poland</div>
+            </div>
+          </div>
+
+          <div class="t-1 block1">
+            <img src="./img/her.jpeg" width="100%" />
+          </div>
+
+          <div class="t-1 block2">Block2</div>
+          <div class="t-1 block3">Block3</div>
+          <div class="t-1 block4">Block4</div>
+          <div class="t-1 block5">Block5</div>
+          <div class="t-1 block6">Block6</div>
+          <div class="t-1 block7">Block7</div>
+
+          <!-- About. Правый бокс -->
+          <div class="cv-page">
+            <div class="main-header">
+              <div class="avatar">
+                <img src="img/avatar.png" alt="" width="125px" height="125px" />
+              </div>
+
+              <div class="block-title-and-close">
+                <div class="title-text">
+                  <h2>Eugene Klimuts</h2>
+                  <div class="second-text"><p>ui/ux designer<br/>eugeneklimut@gmail.com</p></div>
+                  <div class="grey-color">Warsaw, Poland</div>
+                </div>
+
+                <div class="close-icon">
+                  <div class="icon-img"></div>
+                </div>
+              </div>
+            </div>
+            <div class="cv-content">
+
+              <div class="cv-row">
+                <div class="cv-left"><p>Experence</p></div>
+                <div class="cv-right">
+
+                  <div class="cv-inner-block">
+                    <div class="title-cv"><p>Brandpool East — ui/ux designer</p></div>
+                    <p class="years grey-color">January 2021 — Mart 2022</p>
+                    <div class="text-cv"><p>Brandpool East website design. 
+                      Design and support for e-com sites Birkenstock, National Geographic, Lyle & Scott. 
+                      Working with analytics. Prototyping. Trigger mailing list design. 
+                      Create design systems in Figma.</p>
+                    </div>
+                  </div>
+                  
+                  <div class="cv-inner-block">
+                    <div class="title-cv"><p>SETTERS — web designer</p></div>
+                    <p class="years grey-color">October 2020 — December 2020</p>
+                    <div class="text-cv"><p>Landing page design.</p>
+                    </div>
+                  </div>
+
+                  <div class="cv-inner-block">
+                    <div class="title-cv"><p>Freelance — ui/ux designer</p></div>
+                    <p class="years grey-color">August 2019 — October 2020</p>
+                    <div class="text-cv"><p>Landing page for the startup "EasyBloggers". 
+                      Landing page for the store selling granite slabs. Creating posters for parties. 
+                      Designing a mobile application for Internet radio "Radio Plato".</p>
+                    </div>
+                  </div>
+
+                  <div class="cv-inner-block">
+                    <div class="title-cv"><p>Architect</p></div>
+                    <p class="years grey-color">September 2010 — October 2020</p>
+                    <div class="text-cv"><p>Development of project documentation. 
+                      Planning and decomposition of tasks. Knowledge of design standards. 
+                      Interaction with construction organizations.</p>
+                    </div>
+                  </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="cv-row">
+                <div class="cv-left"><p>Education</p></div>
+                <div class="cv-right">
+
+                  <div class="cv-inner-block">
+                    <div class="title-cv"><p>Certificate of comletion DSS. EPAM Systems</p></div>
+                    <p class="years grey-color">May 2020</p>
+                    <div class="t-2">
+                      <div class="l2">
+                        <a target="_blank" href="https://drive.google.com/file/d/1b0ElkVos495AQWGFOOQQPmJMSI1v97Ai/view?usp=sharing"
+                        >Open in new window</a>
+                        <img src="img/small_link_icon.svg" alt="" />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="cv-inner-block">
+                    <div class="title-cv"><p>Brestskiy Technic University</p></div>
+                    <p class="years grey-color">2011-2018</p>
+                  </div>
+                  
+                  <div class="cv-inner-block">
+                    <div class="title-cv"><p>Grodnenskiy Polytechnic College</p></div>
+                    <p class="years grey-color">2006-2010</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="cv-row">
+                <div class="cv-left"><p>Skills</p></div>
+                <div class="cv-right">
+
+                  <div class="cv-inner-block">
+                    <div class="skills-hobbies-text"><p>Managment, Analytics, Design Thinking, Writing, Ideation, 
+                      Research, Prototyping, Create design systems in Figma, Presentation, Leading Workshops, 
+                      HTML, CSS, Material UI, Kontur Ui</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="cv-row">
+                <div class="cv-left"><p>Tools</p></div>
+                <div class="cv-right">
+
+                  <div class="cv-inner-block">
+                    <div class="title-cv"><p>Managment</p></div>
+                    <div class="text-cv"><p>Notion, Monday, Slack, Things, Calendar, Zoom, 
+                      Todoist, Obsidian, Roam Research</p>
+                    </div>
+                  </div>
+                  
+                  <div class="cv-inner-block">
+                    <div class="title-cv"><p>Analytics</p></div>
+                    <div class="text-cv"><p>Yandex Analytics, Google Analytics</p>
+                    </div>
+                  </div>
+
+                  <div class="cv-inner-block">
+                    <div class="title-cv"><p>Design</p></div>
+                    <div class="text-cv"><p>Figma, Photoshop, Lut creator, Protopie, Illustrator</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="cv-row">
+                <div class="cv-left"><p>Hobbies</p></div>
+                <div class="cv-right">
+
+                  <div class="cv-inner-block">
+                    <div class="skills-hobbies-text"><p>Film Photography, Retouch photo, Reading books.</p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+
+    <script src="app.js"></script>
+  </body>
 </html>
