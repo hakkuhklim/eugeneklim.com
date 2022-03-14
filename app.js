@@ -1,6 +1,6 @@
 // Links list
 const link1 = document.querySelector(".link1");
-// const link2 = document.querySelector(".link2");
+const link2 = document.querySelector(".link2");
 const link3 = document.querySelector(".link3");
 const link4 = document.querySelector(".link4");
 // const link5 = document.querySelector(".link5");
@@ -9,7 +9,7 @@ const link7 = document.querySelector(".link7");
 
 const mainBlock = document.querySelector(".init-page");
 const block1 = document.querySelector(".block1");
-// const block2 = document.querySelector(".block2");
+const block2 = document.querySelector(".block2");
 const block3 = document.querySelector(".block3");
 const block4 = document.querySelector(".block4");
 // const block5 = document.querySelector(".block5");
@@ -17,7 +17,7 @@ const block6 = document.querySelector(".block6");
 const block7 = document.querySelector(".block7");
 
 const linkIcon1 = document.querySelector(".link-icon1");
-// const linkIcon2 = document.querySelector(".link-icon2");
+const linkIcon2 = document.querySelector(".link-icon2");
 const linkIcon3 = document.querySelector(".link-icon3");
 const linkIcon4 = document.querySelector(".link-icon4");
 // const linkIcon5 = document.querySelector(".link-icon5");
@@ -42,24 +42,24 @@ link1.addEventListener("mouseout", () => {
   }
 });
 
-// link2.addEventListener("mouseenter", () => {
-//   let intViewportWidth = window.innerWidth;
+link2.addEventListener("mouseenter", () => {
+  let intViewportWidth = window.innerWidth;
 
-//   if (intViewportWidth > 767) {
-//     mainBlock.style.display = "none";
-//     block2.style.display = "block";
-//     linkIcon2.style.display = "block";
-//   }
-// });
-// link2.addEventListener("mouseout", () => {
-//   let intViewportWidth = window.innerWidth;
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "none";
+    block2.style.display = "block";
+    linkIcon2.style.display = "block";
+  }
+});
+link2.addEventListener("mouseout", () => {
+  let intViewportWidth = window.innerWidth;
 
-//   if (intViewportWidth > 767) {
-//     mainBlock.style.display = "flex";
-//     block2.style.display = "none";
-//     linkIcon2.style.display = "none";
-//   }
-// });
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "flex";
+    block2.style.display = "none";
+    linkIcon2.style.display = "none";
+  }
+});
 
 link3.addEventListener("mouseenter", () => {
   let intViewportWidth = window.innerWidth;
