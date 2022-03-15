@@ -156,26 +156,8 @@ link7.addEventListener("mouseout", () => {
   }
 });
 
-// BLOTTER - Example 1
-// var text = new Blotter.Text("EUGENE KLIMUTS WEB/ GRAPHIC DESIGN/ PHOTO", {
-//   family: "'Syne', serif",
-//   size: 84,
-//   fill: "#202020",
-// });
-
-// var material = new Blotter.SlidingDoorMaterial();
-
-// var blotter = new Blotter(material, {
-//   texts: text,
-// });
-
-// var elem = document.getElementById("plain-text");
-// var scope = blotter.forText(text);
-
-// scope.appendTo(elem);
 
 // Buttom more
-
 const btnMore = document.querySelector(".btn-more");
 const overlay = document.querySelector(".overlay");
 const initPage = document.querySelector(".init-page");
@@ -246,5 +228,23 @@ currentX = currentX + (aimX - currentX) * 0.1;
   currentY = currentY + (aimY - currentY) * 0.1;
   requestAnimationFrame(draw);
 }
-
 draw();
+
+
+// // BLOTTER - Example 1
+// var text = new Blotter.Text("EUGENE KLIMUTS WEB/ GRAPHIC DESIGN/ PHOTO", {
+//   family: "'Syne', serif",
+//   size: 84,
+//   fill: "#202020",
+// });
+
+// var material = new Blotter.SlidingDoorMaterial();
+
+// var blotter = new Blotter(material, {
+//   texts: text,
+// });
+
+// var elem = document.getElementById("plain-text");
+// var scope = blotter.forText(text);
+
+// scope.appendTo(elem);
