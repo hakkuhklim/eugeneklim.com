@@ -2,30 +2,28 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Syne", sans-serif;
-  font-style: 400;
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: black;
 }
 
 h2 {
   font-weight: 700;
   font-size: 32px;
-  line-height: 40px;
+  line-height: 44px;
   letter-spacing: 0.02em;
   color: #808080;
 }
 
 p {
-  font-weight: 400;
+  font-family: "DM Sans", sans-serif;
+  font-style: 400;
   font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.02em;
-  color: #000;
+  line-height: 28px;
+  letter-spacing: 0em;
+  color: #333;
 }
 
-.grey-color {
+.grey-color p {
+  margin-top: 0px;
+  margin-bottom: 0px;
   color: #808080;
 }
 .box-560 {
@@ -62,11 +60,6 @@ p {
 }
 
 .title-menu h2 {
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 125%;
-  letter-spacing: 0.02em;
-
   width: 125px;
   margin-right: 20px;
   margin-top: 0px;
@@ -75,7 +68,7 @@ p {
 .description-menu {
   font-weight: 700;
   font-size: 32px;
-  line-height: 125%;
+  line-height: 44px;
   letter-spacing: 0.02em;
   width: 100%;
 }
@@ -105,14 +98,14 @@ p {
 
 .btn-more {
   background: #1424fb;
-  border-radius: 40px;
+  border-radius: 52px;
   color: #fff;
   text-decoration: none;
   font-weight: 700;
   font-size: 24px;
   line-height: 125%;
   letter-spacing: 0.02em;
-  padding: 8px 20px;
+  padding: 11px 20px;
   margin-top: 20px;
 }
 
@@ -182,24 +175,42 @@ p {
   letter-spacing: 0.02em;
 
   text-decoration: none;
-  color: black;
+  color: #1424FB;
 }
 
 .t-2 a:hover {
-  color: rgba(20, 36, 251, 1);
+  color: #ff3300;
 }
+
 .l1 {
+  font-family: "DM Sans", sans-serif;
+  font-style: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  
   padding-bottom: 4px;
-  padding-right: 20px;
   display: flex;
   align-items: center;
 }
 .l2 {
+  font-family: "DM Sans", sans-serif;
+  font-style: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0em;
+
   padding-bottom: 4px;
   display: flex;
   align-items: center;
 }
 .l3 {
+  font-family: "DM Sans", sans-serif;
+  font-style: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0em;
+
   padding-bottom: 16px;
   display: flex;
   align-items: center;
@@ -232,7 +243,52 @@ p {
   padding-bottom: 13px;
   margin-top: 0px;
   margin-bottom: 0px;
+  line-height: 20px;
 }
+.title-text a {
+  text-decoration: none;
+  color: hsl(236, 97%, 53%)
+}
+.title-text a:hover {
+  color: #ff3300;
+}
+
+.cv-download {
+  font-family: "DM Sans", sans-serif;
+  font-style: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+.cv-inner-block a {
+  text-decoration: none;
+  color: hsl(236, 97%, 53%)
+}
+.cv-inner-block a:hover {
+  color: #ff3300;
+}
+.certificate-download {
+  font-family: "DM Sans", sans-serif;
+  font-style: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+
+.link_padding {
+  padding-right: 4px;
+}
+
 .close-icon {
   text-align: right;
 }
@@ -257,31 +313,44 @@ p {
 
 .cv-inner-block {
   margin-bottom: 28px;
+  width: 415px;
 }
 
-.cv-left p {
-  width: 125px;
-  margin-right: 20px;
+.cv-left {
+  font-size: 20px;
   font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  margin-top: 20px;
+  margin-right: 20px;
+  width: 125px;
   color: #808080;
 }
-.title-cv p {
+.title-cv {
+  font-size: 20px;
   font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  margin-top: 20px;
   margin-bottom: 4px;
 }
 .years {
   margin-top: 0px;
-  margin-bottom: 12px;
+  margin-bottom: 0px;
+  color: #808080;
 }
 .text-cv p {
   padding-top: 0;
   padding-bottom: 8px;
-  margin-top: 0;
   margin-bottom: 0;
+  margin-top: 12px;
+  width: 415px;
 }
 .skills-hobbies-text p {
+  padding-top: 4px;
   padding-bottom: 8px;
   margin-bottom: 0;
+  width: 415px;
 }
 
 .primary-container {
