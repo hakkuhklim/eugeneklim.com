@@ -238,13 +238,16 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.second-text p {
-  padding-top: 12px;
-  padding-bottom: 13px;
+.second-text {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
   margin-top: 0px;
-  margin-bottom: 0px;
-  line-height: 20px;
+  margin-bottom: 36px;
+  color: #808080;
 }
+
 .title-text a {
   text-decoration: none;
   color: hsl(236, 97%, 53%)
@@ -260,7 +263,6 @@ p {
   line-height: 20px;
   letter-spacing: 0em;
   
-  padding-bottom: 4px;
   display: flex;
   align-items: center;
 }
@@ -271,6 +273,31 @@ p {
 .cv-inner-block a:hover {
   color: #ff3300;
 }
+
+.main-text-post p {
+  margin-top: 24px;
+  margin-bottom: 4px;
+}
+.link-post a {
+  text-decoration: none;
+  color: hsl(236, 97%, 53%)
+}
+.link-post a:hover {
+  color: #ff3300;
+}
+.link-post {
+  font-family: "DM Sans", sans-serif;
+  font-style: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0em;
+  
+  padding-bottom: 4px;
+  display: flex;
+  align-items: center;
+}
+
+
 .certificate-download {
   font-family: "DM Sans", sans-serif;
   font-style: 400;
@@ -283,7 +310,6 @@ p {
   align-items: center;
   margin-top: 12px;
 }
-
 
 .link_padding {
   padding-right: 4px;
