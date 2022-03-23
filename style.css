@@ -175,7 +175,7 @@ p {
   letter-spacing: 0em;
 
   text-decoration: none;
-  color: #1424FB;
+  color: #1424fb;
 }
 
 .t-2 a:hover {
@@ -188,7 +188,7 @@ p {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0em;
-  
+
   padding-bottom: 4px;
   display: flex;
   align-items: center;
@@ -250,7 +250,7 @@ p {
 
 .title-text a {
   text-decoration: none;
-  color: hsl(236, 97%, 53%)
+  color: hsl(236, 97%, 53%);
 }
 .title-text a:hover {
   color: #ff3300;
@@ -262,13 +262,13 @@ p {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0em;
-  
+
   display: flex;
   align-items: center;
 }
 .cv-inner-block a {
   text-decoration: none;
-  color: hsl(236, 97%, 53%)
+  color: hsl(236, 97%, 53%);
 }
 .cv-inner-block a:hover {
   color: #ff3300;
@@ -280,7 +280,7 @@ p {
 }
 .link-post a {
   text-decoration: none;
-  color: hsl(236, 97%, 53%)
+  color: hsl(236, 97%, 53%);
 }
 .link-post a:hover {
   color: #ff3300;
@@ -291,12 +291,11 @@ p {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0em;
-  
+
   padding-bottom: 4px;
   display: flex;
   align-items: center;
 }
-
 
 .certificate-download {
   font-family: "DM Sans", sans-serif;
@@ -304,7 +303,7 @@ p {
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0em;
-  
+
   padding-bottom: 4px;
   display: flex;
   align-items: center;
@@ -339,7 +338,7 @@ p {
 
 .cv-inner-block {
   margin-bottom: 28px;
-  width: 415px;
+  /* width: 415px; */
 }
 
 .cv-left {
@@ -350,6 +349,7 @@ p {
   margin-top: 20px;
   margin-right: 20px;
   width: 125px;
+  min-width: 125px;
   color: #808080;
 }
 .title-cv {
@@ -370,13 +370,13 @@ p {
   padding-bottom: 8px;
   margin-bottom: 0;
   margin-top: 12px;
-  width: 415px;
+  /* width: 415px; */
 }
 .skills-hobbies-text p {
   padding-top: 4px;
   padding-bottom: 8px;
   margin-bottom: 0;
-  width: 415px;
+  /* width: 415px; */
 }
 
 .primary-container {
@@ -409,6 +409,15 @@ p {
     height: 100%;
     padding: 20px;
     margin-top: 28px;
+  }
+
+  h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+  .second-text {
+    margin-bottom: 28px;
   }
 
   .cv-row {
