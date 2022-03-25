@@ -394,13 +394,17 @@ transform: translateY(-100%);
   margin-top: 12px;
   /* width: 415px; */
 }
-.skills-hobbies-text p {
+.hobbies-text p {
   padding-top: 4px;
   padding-bottom: 8px;
   margin-bottom: 0;
   /* width: 415px; */
 }
-
+.skills-text p {
+  padding-top: 4px;
+  padding-bottom: 8px;
+  margin-bottom: 0;
+}
 .primary-container {
   display: flex;
   flex-direction: column-reverse;
@@ -439,7 +443,7 @@ transform: translateY(-100%);
   }
 
   .second-text {
-    margin-bottom: 28px;
+    margin-bottom: 20px;
   }
 
   .cv-row {
