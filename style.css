@@ -164,9 +164,6 @@ p {
   float: right;
 }
 
-.t-2 {
-  padding-left: 4px;
-}
 .t-2 a {
   font-size: 16px;
   font-weight: 400;
@@ -175,21 +172,21 @@ p {
   letter-spacing: 0em;
 
   text-decoration: none;
-  color: #1424fb;
+  color: #333;
 }
 
 .t-2 a:hover {
-  color: #ff3300;
+  color: #1424FB;
 }
 
-.l1 {
+.l1 a {
   font-family: "DM Sans", sans-serif;
   font-style: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0em;
 
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   display: flex;
   align-items: center;
 }
@@ -200,7 +197,7 @@ p {
   line-height: 20px;
   letter-spacing: 0em;
 
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   display: flex;
   align-items: center;
 }
@@ -211,7 +208,6 @@ p {
   line-height: 20px;
   letter-spacing: 0em;
 
-  padding-bottom: 16px;
   display: flex;
   align-items: center;
 }
@@ -243,76 +239,102 @@ p {
   font-weight: 700;
   line-height: 25px;
   letter-spacing: 0em;
-  margin-top: 0px;
-  margin-bottom: 36px;
+  margin-top: 4px;
+  margin-bottom: 32px;
   color: #808080;
 }
 
-.title-text a {
-  text-decoration: none;
-  color: hsl(236, 97%, 53%);
-}
-.title-text a:hover {
-  color: #ff3300;
-}
-
-.cv-download {
+.cv-download a {
   font-family: "DM Sans", sans-serif;
   font-style: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0em;
 
+  text-decoration: none;
+  color: #333;
+
   display: flex;
   align-items: center;
 }
+.cv-download a:hover {
+  color: #1424FB;
+}
+
 .cv-inner-block a {
   text-decoration: none;
-  color: hsl(236, 97%, 53%);
+  color: #333;
 }
 .cv-inner-block a:hover {
-  color: #ff3300;
+  color: #1424FB;
 }
 
 .main-text-post p {
   margin-top: 24px;
-  margin-bottom: 4px;
+  margin-bottom: 16px;
+}
+
+.link-post a:hover {
+  color: #1424FB;
 }
 .link-post a {
-  text-decoration: none;
-  color: hsl(236, 97%, 53%);
-}
-.link-post a:hover {
-  color: #ff3300;
-}
-.link-post {
   font-family: "DM Sans", sans-serif;
   font-style: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0em;
+  text-decoration: none;
+  color: #333;
 
-  padding-bottom: 4px;
   display: flex;
   align-items: center;
 }
 
-.certificate-download {
+.link-certificate {
   font-family: "DM Sans", sans-serif;
   font-style: 400;
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0em;
 
-  padding-bottom: 4px;
+  margin-bottom: 4px;
   display: flex;
   align-items: center;
   margin-top: 12px;
 }
 
-.link_padding {
-  padding-right: 4px;
+/* Animation for text links */
+
+.link-destination {
+display: inline-block;
+overflow: hidden;
 }
+
+.link-destination span {
+position: relative;
+display: inline-block;
+-webkit-transition: -webkit-transform 0.3s;
+transition: transform 0.3s;
+}
+
+.link-destination span::before {
+position: absolute;
+white-space: nowrap;	
+top: 100%;
+content: attr(data-hover);
+}
+
+.link-destination:hover span,
+.link-destination:focus span {
+-webkit-transform: translateY(-100%);
+transform: translateY(-100%);
+}
+
+/* end */
+
+
+
+
 
 .close-icon {
   text-align: right;
