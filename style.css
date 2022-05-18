@@ -144,13 +144,15 @@ p {
 .block5,
 .block6,
 .block7,
+.block8,
 .link-icon1,
 .link-icon2,
 .link-icon3,
 .link-icon4,
 .link-icon5,
 .link-icon6,
-.link-icon7 {
+.link-icon7,
+.link-icon8 {
   display: none;
 }
 
@@ -160,7 +162,8 @@ p {
 .link-icon4,
 .link-icon5,
 .link-icon6,
-.link-icon7 {
+.link-icon7,
+.link-icon8 {
   float: right;
 }
 
