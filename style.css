@@ -152,7 +152,8 @@ p {
 .link-icon5,
 .link-icon6,
 .link-icon7,
-.link-icon8 {
+.link-icon8,
+.link-icon9 {
   display: none;
 }
 
@@ -163,7 +164,8 @@ p {
 .link-icon5,
 .link-icon6,
 .link-icon7,
-.link-icon8 {
+.link-icon8,
+.link-icon9 {
   float: right;
 }
 

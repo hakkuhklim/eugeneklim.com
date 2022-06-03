@@ -181,13 +181,13 @@ link8.addEventListener("mouseout", () => {
   }
 });
 
-link8.addEventListener("mouseenter", () => {
+link9.addEventListener("mouseenter", () => {
   let intViewportWidth = window.innerWidth;
 
   if (intViewportWidth > 767) {
     mainBlock.style.display = "none";
-    block8.style.display = "block";
-    linkIcon8.style.display = "block";
+    block9.style.display = "block";
+    linkIcon9.style.display = "block";
   }
 });
 link9.addEventListener("mouseout", () => {
