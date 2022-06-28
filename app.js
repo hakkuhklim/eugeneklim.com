@@ -8,6 +8,7 @@ const link6 = document.querySelector(".link6");
 const link7 = document.querySelector(".link7");
 const link8 = document.querySelector(".link8");
 const link9 = document.querySelector(".link9");
+const link10 = document.querySelector(".link10");
 
 const mainBlock = document.querySelector(".init-page");
 const block1 = document.querySelector(".block1");
@@ -19,6 +20,7 @@ const block6 = document.querySelector(".block6");
 const block7 = document.querySelector(".block7");
 const block8 = document.querySelector(".block8");
 const block9 = document.querySelector(".block9");
+const block10 = document.querySelector(".block10");
 
 const linkIcon1 = document.querySelector(".link-icon1");
 // const linkIcon2 = document.querySelector(".link-icon2");
@@ -29,6 +31,7 @@ const linkIcon6 = document.querySelector(".link-icon6");
 const linkIcon7 = document.querySelector(".link-icon7");
 const linkIcon8 = document.querySelector(".link-icon8");
 const linkIcon9 = document.querySelector(".link-icon9");
+const linkIcon10 = document.querySelector(".link-icon10");
 
 link1.addEventListener("mouseenter", () => {
   let intViewportWidth = window.innerWidth;
@@ -197,6 +200,25 @@ link9.addEventListener("mouseout", () => {
     mainBlock.style.display = "block";
     block9.style.display = "none";
     linkIcon9.style.display = "none";
+  }
+});
+
+link10.addEventListener("mouseenter", () => {
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "none";
+    block10.style.display = "block";
+    linkIcon10.style.display = "block";
+  }
+});
+link10.addEventListener("mouseout", () => {
+  let intViewportWidth = window.innerWidth;
+
+  if (intViewportWidth > 767) {
+    mainBlock.style.display = "block";
+    block10.style.display = "none";
+    linkIcon10.style.display = "none";
   }
 });
 
